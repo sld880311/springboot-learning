@@ -1,7 +1,5 @@
 *.class
 
-
-
 # Package Files #
 
 *.jar
@@ -11,11 +9,9 @@
 *.ear
 
 
-
 # ignore Maven generated target folders
 
 target
-
 
 
 # ignore eclipse files
@@ -27,3 +23,4 @@ target
 .settings
 
 .metadata
+
