@@ -21,10 +21,11 @@
 #### 版本：Oxygen.2 Release (4.7.2)
 #### 配置maven
 #### 安装sts
-     下载地址：https://spring.io/tools/sts/all
-     安装方式：
-       1.直接下载集成sts的eclipse
-       2.下载sts zip包，导入eclipse
-       3.在线安装：http://dist.springsource.com/release/TOOLS/update/e4.7/
-     安装：
-       eclipse中的help---》install new software打开安装页面选择zip包或者在线安装即可
+##### 下载地址：https://spring.io/tools/sts/all
+##### 安装方式：
+###### 1.直接下载集成sts的eclipse
+###### 2.下载sts zip包，导入eclipse
+###### 3.在线安装：http://dist.springsource.com/release/TOOLS/update/e4.7/
+##### 安装：
+###### eclipse中的help---》install new software打开安装页面选择zip包或者在线安装即可
+       
