@@ -12,6 +12,9 @@
 # ignore Maven generated target folders
 
 target
+.mvn
+mvnw
+mvnw.cmd
 
 
 # ignore eclipse files

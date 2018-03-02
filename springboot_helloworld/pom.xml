@@ -41,6 +41,13 @@
         	<groupId>org.springframework.boot</groupId>
         	<artifactId>spring-boot-starter-web</artifactId>
 	 	</dependency>
+	 	<!-- 自动部署依赖 -->
+	 	<dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-devtools</artifactId>
+        	<!-- 表示依赖不会传递 -->
+        	<optional>true</optional> 
+    	</dependency>
 	</dependencies>
 
 	<build>
@@ -48,6 +55,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+            		<fork>true</fork> <!-- 如果没有该配置，devtools不会生效 -->
+        		</configuration>
 			</plugin>
 		</plugins>
 	</build>
