@@ -1,0 +1,7 @@
+com: #自定义属性信息并且在rest接口中返回使用
+  sunld:
+    applicationp: 
+      chapter: springboot自定义属性-yml
+      course: 《springboot系统化学习》-yml
+      #在配置文件中可以使用属性传递
+      learning: 我们正在学习${com.sunld.applicationp.course}中的${com.sunld.applicationp.chapter}
