@@ -7,6 +7,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ApplicationdemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApplicationdemoApplication.class, args);
+		
+//		SpringApplication.run(ApplicationdemoApplication.class, args);
+		
+		/**
+		 * 禁用命令行输入参数
+		 */
+		
+		SpringApplication springApplication = new SpringApplication(ApplicationdemoApplication.class);
+		springApplication.setAddCommandLineProperties(false);
+		springApplication.run(args);
 	}
 }
