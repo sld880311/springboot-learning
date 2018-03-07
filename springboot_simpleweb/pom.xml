@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sunld</groupId>
-	<artifactId>applicationdemo</artifactId>
+	<artifactId>springboot_simpleweb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>applicationdemo</name>
-	<description>application配置文件说明</description>
+	<name>springboot_simpleweb</name>
+	<description>快速构建较复杂的web项目</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -40,15 +40,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		<!-- 增加使用@ConfigurationProperties读取自定义属性的依赖 -->
-		<!--spring boot 配置处理器 -->      
-       <dependency>
-           <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-configuration-processor</artifactId>
-           <optional>true</optional>
-        </dependency>
-		
 	</dependencies>
 
 	<build>
@@ -56,9 +47,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-            		<fork>true</fork> <!-- 如果没有该配置，devtools不会生效，在新版本中可以省略 -->
-        		</configuration>
 			</plugin>
 		</plugins>
 	</build>
