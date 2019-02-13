@@ -1,0 +1,62 @@
+配置文件初始化类ConfigFileApplicationListener
+环境变量初始顺序
+
+没有cloud
+
+StandardServletEnvironment{
+	activeProfiles=[],
+	defaultProfiles=[default],
+	propertySources=[StubPropertySource{
+		name='servletConfigInitParams'
+	},
+	StubPropertySource{
+		name='servletContextInitParams'
+	},
+	MapPropertySource{
+		name='systemProperties'
+	},
+	SystemEnvironmentPropertySource{
+		name='systemEnvironment'
+	},
+	RandomValuePropertySource{
+		name='random'
+	}]
+}
+
+有cloud
+
+StandardEnvironment{
+	activeProfiles=[],
+	defaultProfiles=[default],
+	propertySources=[MapPropertySource{
+		name='bootstrap'
+	},
+	StubPropertySource{
+		name='servletConfigInitParams'
+	},
+	StubPropertySource{
+		name='servletContextInitParams'
+	},
+	MapPropertySource{
+		name='systemProperties'
+	},
+	SystemEnvironmentPropertySource{
+		name='systemEnvironment'
+	},
+	RandomValuePropertySource{
+		name='random'
+	},
+	MapPropertySource{
+		name='defaultProperties'
+	},
+	MapPropertySource{
+		name='springCloudClientHostInfo'
+	}]
+}
+文件加载地址[file:./config/, file:./, classpath:/config/, classpath:/]，优先级从左到右
+
+文件名称：
+
+文件读取类：[org.springframework.boot.env.PropertiesPropertySourceLoader@732c2a62, org.springframework.boot.env.YamlPropertySourceLoader@272ed83b]
+可解析的文件类型：[properties, xml, yml, yaml]
+
